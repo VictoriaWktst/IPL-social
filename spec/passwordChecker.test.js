@@ -51,4 +51,9 @@ describe("Check password", function() {
         let main = new Main();
         expect(main.passwordChecker("abc123!@")).toBe(true);
     });
+
+    it("should return false if password does not contain a digit", function() {
+        let main = new Main();
+        expect(main.passwordChecker("abcdefg!")).toBe(false);
+    });
 });

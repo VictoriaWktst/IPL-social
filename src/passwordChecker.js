@@ -9,6 +9,12 @@ export class Main{
         if (!specialCharRegex.test(password)) {
             return false;
         }
+
+        const digitRegex = /\d/;
+        if (!digitRegex.test(password)) {
+            return false;
+        }
+
         return true;
     }
 }

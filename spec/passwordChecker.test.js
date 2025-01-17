@@ -17,5 +17,9 @@ describe("Check password", function() {
         expect(main.passwordChecker("44")).toBe(false);
     });
 
+    it("should return false if password is less than 4", function() {
+        let main = new Main();
+        expect(main.passwordChecker("456")).toBe(false);
+    });
     
 });

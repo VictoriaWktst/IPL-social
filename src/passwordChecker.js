@@ -1,7 +1,7 @@
 export class Main{
 
     passwordChecker(password){
-        if(password.length < 3){
+        if(password.length < 4){
             return false;
         }
     }

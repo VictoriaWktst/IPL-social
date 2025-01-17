@@ -46,4 +46,9 @@ describe("Check password", function() {
         let main = new Main();
         expect(main.passwordChecker("abcdefg1")).toBe(false);
     });
+
+    it("should return true if password is at least 8 characters long and contains a special character", function() {
+        let main = new Main();
+        expect(main.passwordChecker("abc123!@")).toBe(true);
+    });
 });

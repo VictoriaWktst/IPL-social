@@ -9,5 +9,6 @@ export class Main{
         if (!specialCharRegex.test(password)) {
             return false;
         }
+        return true;
     }
 }

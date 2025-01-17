@@ -1,4 +1,4 @@
-import { Main } from "../src/passwordChecker";
+import { Main } from "../src/passwordChecker.js";
 
 describe("Check password", function() {
 
@@ -7,4 +7,5 @@ describe("Check password", function() {
         expect(main.passwordChecker("")).toBe(false);
     });
 
+    
 });

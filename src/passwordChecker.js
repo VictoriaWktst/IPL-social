@@ -4,6 +4,5 @@ export class Main{
         if(password.length < 1){
             return false;
         }
-        
     }
 }

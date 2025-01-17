@@ -7,5 +7,12 @@ describe("Check password", function() {
         expect(main.passwordChecker("")).toBe(false);
     });
 
+   it("should return false if password is less than 2", function() {
+        let main = new Main();
+        expect(main.passwordChecker("4")).toBe(false);
+    });
+
+    
+
     
 });

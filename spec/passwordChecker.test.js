@@ -12,7 +12,10 @@ describe("Check password", function() {
         expect(main.passwordChecker("4")).toBe(false);
     });
 
-    
+    it("should return false if password is less than 3", function() {
+        let main = new Main();
+        expect(main.passwordChecker("44")).toBe(false);
+    });
 
     
 });

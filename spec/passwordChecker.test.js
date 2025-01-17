@@ -41,4 +41,9 @@ describe("Check password", function() {
         let main = new Main();
         expect(main.passwordChecker("4123456")).toBe(false);
     });
+
+    it("should return false if password does not contain a special character", function() {
+        let main = new Main();
+        expect(main.passwordChecker("abcdefg1")).toBe(false);
+    });
 });

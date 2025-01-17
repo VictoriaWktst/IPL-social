@@ -4,5 +4,10 @@ export class Main{
         if(password.length < 8){
             return false;
         }
+
+        const specialCharRegex = /[!@#$%^&*(),.?":{}|<>]/;
+        if (!specialCharRegex.test(password)) {
+            return false;
+        }
     }
 }

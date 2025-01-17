@@ -12,3 +12,5 @@ it("should return false if password is less than 2", function() {
     });
 par exemple là je suis à 2 puis je vais faire 3,4,5,...
 
+
+pour tester les tests, allez dans "passwordChecker.test.js" et utiliser la commande "npm test"
